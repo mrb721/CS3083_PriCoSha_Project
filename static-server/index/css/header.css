@@ -1,0 +1,72 @@
+/* Header CSS */
+#header button:hover {
+	background-color: #607D8B;
+	transition: background-color 0.9s;
+}
+#content button, #header button {
+	font-weight: bold;
+	font-size: 1em;
+	margin: 0.5em;
+	padding: 0.5em 1.0em;
+	background-color: #37474F;
+	color: white;
+	border: none;
+	border-radius: 10px;
+	transition: font-size 0.1s, background-color 0.4s, margin 0.1s;
+}
+#header h1{
+	float: left;
+	color: white;
+	margin: 0.5em;
+}
+#header {
+	text-align: right;
+	background-color: #673AB7;
+}
+#logo {
+	text-align: left;
+	color: white;
+	font-size: 2em;
+	/* margin-right: 2em; */
+	padding: 0.1em 1em;
+	/* display: inline-block; */
+	float: left;
+}
+#avatar {
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+	height: 4em;
+	width: 4em;
+	background-color: gray;
+	background-image: url("../img/gary.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	border-radius: 5em;
+	display: none;
+}
+#avatar:hover {
+	box-shadow: 0.1em 0.1em 1em #c2c2d6;
+}
+#profileName {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 2em;
+	text-align: right;
+	color: white;
+	padding: 0.5em;
+}
+#search input {
+	margin-left: 2em;
+	font-size: 1.5em;
+	padding: 0.5em;
+	border: none;
+	border-radius: 10px;
+}
+.flex {
+	display: flex;
+}
+.flex-grow {
+	flex-grow: 1;
+}

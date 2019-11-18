@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>PriCoSha - Login/Signup</title>
+	<link href="css/login.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="js/login.js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<div id="logo">PriCoSha</div>
+	</div>
+	<div id="content">
+		<div id="styleForm">
+			<form id="register" method="post">
+				<input id="regFname" type="text" placeholder="First name" required/>
+				<input id="regLname" type="text" placeholder="Last name" required/>
+				<input id="regUname" type="text" placeholder="Username" required/>
+				<input id="signupPass" type="password" placeholder="Password" required/>
+				<input id="confirmPass" type="password" placeholder="Confirm Password" required/>
+				<button type="submit">Sign up</button>
+			</form>
+			<form id="login" method="post">
+				<input id="loginUname" type="text" placeholder="Username" required/>
+				<input id="loginPass" type="password" placeholder="Password" required/>
+				<button type="submit">Log in</button>
+			</form>
+			<div id="toggleForm">Click here to register</div>
+		</div>
+	</div>
+
+
+</body>
+
+</html>

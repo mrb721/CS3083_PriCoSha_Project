@@ -1,0 +1,13 @@
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+#content {
+	text-align: center;
+}
+#content h1 {
+	font-size: 4em;
+}
+#content h2 {
+	font-size: 3em;
+}

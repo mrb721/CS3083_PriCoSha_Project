@@ -1,0 +1,11 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+#header {
+	height: 4em;	
+	background-color: blue;
+}
+#logo {
+	color: white;
+	font-size: 2em;
+}

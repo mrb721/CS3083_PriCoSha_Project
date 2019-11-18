@@ -1,0 +1,34 @@
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+#content {
+	text-align: center;
+}
+#content h1 {
+	font-size: 4em;
+}
+#content h2 {
+	font-size: 3em;
+	color: white;
+}
+.card {
+	display: inline-block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	height: 20em;
+	width: 20em;
+	border-radius: 5px;
+	background-color: #607D8B;
+}
+#content #buttons {
+	width: 20em;
+	display: inline-block;
+	text-align: left;
+
+}
+.fileLabel input[type="file"] {
+	position: fixed;
+	top: -1000px;
+}

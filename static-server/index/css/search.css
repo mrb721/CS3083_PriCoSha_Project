@@ -1,0 +1,46 @@
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+#filters {
+	text-align: left;
+	margin-left: 2em;
+	font-size: 2em;
+}
+#filters #user, #filters #name, #filters .friendGroup {
+	display: inline-block;
+}
+#filters form {
+	display: inline-block;
+}
+.resultBox {
+	margin: auto;
+	text-align: center;
+	height: 15em;
+	width: 60em;
+	background-color: #bdbdbd;
+	border-radius: 10px 10px 10px 10px;
+}
+.personAvatar {
+	display: inline-block;
+	text-align: left !important;
+	margin-top: 1em;
+	height: 4em;
+	width: 4em;
+	background-color: gray;
+	background-image: url("../img/Screenshot_2.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	border-radius: 5em;
+}
+.userName {
+	font-size: 3em;
+}
+.postContent {
+	font-size: 2em;
+}
+.FriendGroup {
+	font-size: 2em;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Profile</title>
+	<link href="css/profile.css" rel="stylesheet" type="text/css">
+	<link href="css/header.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script src="js/profile.js"></script>
+	<script src="js/sessionSettings.js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<div id="logo">PriCoSha</div>
+		<a href="profile.html">
+			<div id="avatar"></div>
+		</a>
+		<a href="search.html">
+			<button>Search</button>
+		</a>
+		<a href="wall.html">
+			<button>Wall</button>
+		</a>
+		<a href="settings.html">
+			<button>Settings</button>
+		</a>
+		<a onclick="clearCookie()" href="index.html">
+			<button>Logout</button>
+		</a>
+	</div>
+	<div id="content">
+		<h1>Profile</h1>
+		<div class="card">
+			<h2>Gary Chi</h2>
+			<div id="avatar"></div>
+			<h3>Username: tetrisgod21</h3>
+		</div>
+		<div id="buttons">
+			<!--<button>Add Friends</button><br>-->
+			<label class="fileLabel" data-toggle="tooltip" data-placement="top" title="Upload">
+				<input type="file" accept="image/*" id="avatarFile">
+				<span>Change Avatar</span>
+			</label>
+			<br/>
+			<br/>
+			<a href="settings.html">
+				<button id="settingsButton">Settings</button>
+			</a>
+		</div>
+		<div></div>
+	</div>
+
+
+</body>
+
+</html>

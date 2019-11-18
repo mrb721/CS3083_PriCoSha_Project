@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Manage FriendGroups</title>
+	<link href="css/manageFriends.css" rel="stylesheet" type="text/css">
+	<link href="css/header.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script src="js/manageFriends.js"></script>
+	<script src="js/sessionSettings.js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<div id="logo">PriCoSha</div>
+		<a href="profile.html">
+			<div id="avatar"></div>
+		</a>
+		<a href="search.html">
+			<button>Search</button>
+		</a>
+		<a href="wall.html">
+			<button>Wall</button>
+		</a>
+		<a href="settings.html">
+			<button>Settings</button>
+		</a>
+		<a onclick="clearCookie()" href="index.html">
+			<button>Logout</button>
+		</a>
+	</div>
+	<div id="content">
+		<h1>Manage FriendGroups</h1>
+
+		<hr>
+
+		<div id="placeToShowGroups">
+
+		</div>
+
+		<hr>
+
+		<form id="makeFriendGroupForm">
+			<input id="makeFGname" type="text" placeholder="FriendGroup name">
+			<input id="FGdesc" type="text" placeholder="Description">
+			<button type="submit">Make a FriendGroup</button>
+		</form>
+
+		<form id="joinFriendGroupForm">
+			<input id="joinFGname" type="text" placeholder="FriendGroup name">
+			<button type="submit">Join a FriendGroup</button>
+		</form>
+
+		<form id="removeFriendGroupForm">
+			<input id="rmFGname" type="text" placeholder="FriendGroup name">
+			<button type="submit">Remove FriendGroup</button>
+		</form>
+	</div>
+</body>
+
+</html>

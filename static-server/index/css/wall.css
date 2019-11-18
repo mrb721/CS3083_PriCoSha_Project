@@ -1,0 +1,194 @@
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+#content h1 {
+	text-align: center;
+}
+#search, #post {
+	text-align: right;
+}
+#createPost {
+	bottom: 1em;
+	right: 1em;
+	position: fixed;
+}
+input {
+	margin: 2em auto;
+	padding: 0.5em;
+}
+#placeToShowComments, #placeToShowTags {
+	background: lightcoral;
+	height: 10em;
+	width: 28em;
+	margin: 2em auto;
+	border: 1px solid gray;
+	border-radius: 0.2em;
+	padding: 1em;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    text-align: initial;
+}
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+.modal-header h1 {
+	margin: 0.4em;
+}
+.modal-body {padding: 1em;}
+.postBody {
+	width: 100%;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#textField {
+	margin: 0.5em 0.5em;
+}
+#textField textarea {
+	width: 100%;
+	resize: none;
+}
+#photoField {
+	font-size: 1.6em;
+	margin: 0.5em 0.5em;
+}
+button#uploadPost,
+button#uploadPhoto {
+	margin: 0.3em;
+	font-size: 0.8em;
+}
+button#uploadPost:hover,
+button#uploadPhoto:hover {
+	margin: 0.15em;
+	font-size: 1.1em;
+}
+.postButts {
+	font-size: 0.8em;
+	font-weight: bold;
+	cursor: pointer;
+	border: 1px solid gray;
+	padding: 0.5em;
+	border-radius: 0.2em;
+	background-color:white;
+}
+.aPost {
+	height: auto;
+	width: 30em;
+	border-radius: 0.2em;
+	margin: 2em auto;
+	background: lightcyan;
+	border: 1px solid gray;
+}
+.aPost * {
+	margin: 0.4em;
+	display: inline-block;
+}
+.aPost .postHead {
+	margin-top: 0;
+	display: inline;
+	font-size: 2.7em;
+}
+.aPost .personAvatar {
+	display: inline-block;
+	margin-top: 1em;
+	height: 4em;
+	width: 4em;
+	background-color: gray;
+	background-image: url("../img/gary.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	border-radius: 5em;
+}
+.aPost .postPicture {
+	max-height: 20em;
+	max-width: 100%;
+}
+#activateComments {
+	display: inline-block;
+	margin: auto;
+}
+#activateTags {
+	display: inline-block;
+	margin: auto;
+}
+#commentsModal {
+	/*position: fixed;*/
+}
+#comments {
+	/*display: block;*/
+}
+.numComments {
+	text-align: left;
+	display: block;
+}
+.userName #comments {
+	display: inline-block;
+}
+.userName {
+	font-size: 3em;
+}
+#comments {
+	margin-left: 2em;
+}
+.pImage {
+	height: 4em;
+	width: 4em;
+	position: absolute;
+	background-color:white;
+	left: 0;
+	top: 0;
+	border-radius: 4em;
+}
+.personAvatar {
+	position: relative;
+}

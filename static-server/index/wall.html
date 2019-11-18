@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Wall Feed</title>
+	<link href="css/wall.css" rel="stylesheet" type="text/css">
+	<link href="css/header.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script src="js/wall.js"></script>
+	<script src="js/sessionSettings.js"></script>
+</head>
+
+<body>
+	<div id="header">
+		<div id="logo">PriCoSha</div>
+		<div class="flex">
+			<a style="align-self: center;" href="profile.html">
+				<div id="avatar"></div>
+			</a>
+			<div class="flex-grow">
+				<a href="search.html">
+					<button>Search</button>
+				</a>
+				<a href="wall.html">
+					<button>Wall</button>
+				</a>
+				<a href="settings.html">
+					<button>Settings</button>
+				</a>
+				<a onclick="clearCookie()" href="index.html">
+					<button>Logout</button>
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="content">
+		<div id="post">
+
+			<form id="commentForm" style="display: none; position: fixed; right: 1em; bottom: 1em;">
+				<input id="postIDtoGetComment" type="text" placeholder="postID">
+				<button type="submit">Get comment</button>
+			</form>
+
+			<form id="showComment" style="display: none; position: fixed; right: 1em; bottom: 3em;">
+				<input id="postIDtoComment" type="text" placeholder="postID" style="display:none;">
+				<input id="newComment" type="text" placeholder="new comment">
+				<button type="submit">Post comment</button>
+			</form>
+
+			<form id="showCommentActual" style="display: none">
+				<input id="postIDshowComment" type="text" placeholder="postID" style="display:none">
+				<button type="submit">Show comments</button>
+			</form>
+
+			<button id="createPost">Create Post</button>
+
+			<div id="postModal" class="modal">
+				<div class="modal-content">
+					<div class="modal-header">
+						<span class="close">&times;</span>
+						<h1>Create Post</h1>
+					</div>
+					<div class="modal-body">
+						<button id="postTypeToggle">Click here to post photo</button>
+						<form id="createPostForm">
+							<div id="textField" class="flex">
+								<span>Type up a post you want to share</span>
+								<input id="postID" type="text" placeholder="post id" style="display: none" />
+								<input id="postTitle" type="text" placeholder="Post Title" />
+								<textarea id="postText" placeholder="Write post here."></textarea>
+								<div id="uploadPost">Post text</div>
+							</div>
+							<hr/>
+							<div id="photoField" class="flex" style="display: none">
+								<span class="flex-grow">Upload a photo you want to share</span>
+								<input id="picFiles" type="file">
+								<div id="uploadPhoto">Post photo</div>
+							</div>
+							<div id="createPostBtn" style="display:none">Create post</div>
+							<div id="editPostBtn" style="display:none">Edit post</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="theWall"></div>
+
+		<input id="minosaurShare" type="text" style="position: fixed; bottom: 8em; right: 2em;" placeholder="GroupName to share post with">
+		<input id="personToTag" type="text" style="position: fixed; bottom: 12em; right: 2em;" placeholder="Tag a person in post">
+		<div id="placeToShowComments"></div>
+		<div id="placeToShowTags"></div>
+
+		<div id="Tags"></div>
+		<!--<div id="search">
+			<form action="search.html">
+				<input type="text" placeholder="Search" name="searching">
+				<button type="submit" id="searchButton">Find</button>
+			</form>
+		</div>-->
+	</div>
+
+</body>
+
+</html>

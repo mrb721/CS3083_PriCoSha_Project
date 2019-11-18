@@ -1,0 +1,11 @@
+body {
+  background: #f6f9fc;
+  color: #32325d;
+  font-family: Garamond;
+}
+
+.shadow-box {
+  border: 1px black solid;
+  height: auto;
+  box-shadow: black 5px 5px 20px;
+}

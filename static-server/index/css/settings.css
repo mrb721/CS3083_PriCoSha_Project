@@ -1,0 +1,68 @@
+body {
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+}
+#content {
+	margin: 0 auto;
+	width: 50%;
+	text-align: center;
+}
+#content h1 {
+	font-size: 4em;
+}
+#content a {
+	text-decoration: none;
+	/*font-size: 1.5em;*/
+	font-weight: bold;
+}
+/*#content button {
+	background-color: #1E88E5;
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 0.5em 2em;
+	color: white;
+	border: none;
+	border-radius: 10px;
+}*/
+#content button:hover {
+	font-size: 1.8em;
+	background-color: mediumseagreen;
+	margin-top: 0.2em;
+}
+#avatar {
+	position: absolute;
+	margin-right: auto;
+	height: 4em;
+	width: 4em;
+	background-color: gray;
+	background-image: url("../img/gary.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	border-radius: 5em;
+}
+#avatar:hover {
+	box-shadow: 0.1em 0.1em 1em #c2c2d6;
+
+}
+#profileButton {
+	margin: auto 0.5em;
+}
+
+#colorPalette div{
+	height: 4em;
+	width: 4em;
+	border-radius: 5em;
+	margin: 0.5em;
+	display: inline-block;
+	overflow: hidden;
+	border: 0em #B0BEC5 solid;
+	transition: border-width 0.2s, margin 0.2s; /*faster fade-out animation*/
+}
+
+#colorPalette div:hover {
+	transition: border-width 0.4s, margin 0.4s; /*slower fade-in animation*/
+	border-width: 0.5em;
+	margin: 0;
+}
